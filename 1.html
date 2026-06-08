@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Priyam Ghosh | AI Hardware Architect</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:
+linear-gradient(135deg,#020617,#0f172a,#1e293b);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+position:fixed;
+width:100%;
+background:rgba(2,6,23,.6);
+backdrop-filter:blur(20px);
+z-index:100;
+}
+
+.logo{
+font-size:1.7rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:0 10%;
+gap:80px;
+}
+
+.profile img{
+width:330px;
+height:330px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #38bdf8;
+
+box-shadow:
+0 0 30px #38bdf8,
+0 0 90px rgba(56,189,248,.5);
+}
+
+.hero-content{
+max-width:650px;
+}
+
+.hero-content h1{
+font-size:4.5rem;
+line-height:1.1;
+}
+
+.hero-content span{
+color:#38bdf8;
+}
+
+.hero-content h2{
+margin-top:15px;
+font-weight:400;
+color:#cbd5e1;
+}
+
+.hero-content p{
+margin-top:30px;
+line-height:1.8;
+color:#94a3b8;
+}
+
+.buttons{
+margin-top:40px;
+}
+
+.btn{
+padding:15px 35px;
+background:#38bdf8;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+color:black;
+margin-right:15px;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.btn2{
+padding:15px 35px;
+border:1px solid #38bdf8;
+border-radius:50px;
+text-decoration:none;
+color:white;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+.title{
+font-size:2.5rem;
+color:#38bdf8;
+margin-bottom:40px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+padding:40px;
+border-radius:25px;
+line-height:1.9;
+border:1px solid rgba(255,255,255,.08);
+}
+
+/* TIMELINE */
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.box{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+border-left:5px solid #38bdf8;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+padding:25px;
+text-align:center;
+border-radius:20px;
+background:rgba(255,255,255,.05);
+}
+/* DONATION */ .donation-container{ display:flex; align-items:center; justify-content:center; gap:60px; flex-wrap:wrap; } .qr-section{ text-align:center; } .qr-code{ width:250px; border-radius:20px; border:3px solid #38bdf8; box-shadow: 0 0 25px #38bdf8, 0 0 80px rgba(56,189,248,.4); } .donation-content{ max-width:550px; } .donation-content h3{ font-size:2rem; margin-bottom:20px; color:#38bdf8; } .donation-content p{ line-height:1.9; color:#cbd5e1; } @media(max-width:900px){ .donation-container{ flex-direction:column; text-align:center; } .qr-code{ width:200px; } }
+/* FOOTER */
+
+footer{
+padding:50px;
+text-align:center;
+color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+padding-top:140px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:3rem;
+}
+
+.profile img{
+width:240px;
+height:240px;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+PRIYAM GHOSH
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<div class="profile">
+<img src="priyam.jpg">
+</div>
+
+<div class="hero-content">
+
+<h1>
+Building The Future Of <span>AI Computing</span>
+</h1>
+
+<h2>
+Founder • Developer • Independent Researcher
+</h2>
+
+<p>
+Exploring the intersection of software engineering, computer architecture, and artificial intelligence, with a current focus on Tensor Processing Unit (TPU) Instruction Set Architecture research and AI acceleration technologies.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn">
+Explore Projects
+</a>
+
+<a href="#contact" class="btn2">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<section id="about">
+
+<h2 class="title">
+About
+</h2>
+
+<div class="card">
+<p>
+
+Priyam Ghosh is a software developer and AI hardware enthusiast. He is a graduate of Class XII from Delhi Public School, Paradip Refinery. His early work included graphics applications and file management programs developed in C and C++, which marked the beginning of his interest in software engineering and computer architecture.
+
+<br><br>
+
+In 2023, he developed <b>Fanclub</b>, a social media platform built using PHP, JavaScript, HTML, and CSS that enabled users to communicate and interact in real time.
+
+<br><br>
+
+He later founded <b>Edunova Pro</b>, an educational platform developed using PHP, HTML, CSS, JavaScript, jQuery, AJAX, and SQL. Alongside the web platform, he also developed its Android application using Java. Edunova Pro was focused on facilitating direct communication between students and teachers and simplifying access to assignments, report cards, announcements, and other academic resources.
+
+<br><br>
+
+He subsequently created <b>DEX OS</b>, a private experimental web operating system emphasizing client-side storage and security.
+
+<br><br>
+
+His projects have reflected interests ranging from web technologies and operating systems to computer architecture and artificial intelligence. Currently, he is engaged in research and development of a <b>Tensor Processing Unit (TPU) Instruction Set Architecture</b>, exploring technologies aimed at advancing AI acceleration and high-performance computing.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">
+Projects Timeline
+</h2>
+
+<div class="timeline">
+
+<div class="box">
+2022 • Graphics Programs in C and C++
+<br>
+<small>Learning and experimentation • Private</small>
+</div>
+
+<div class="box">
+2023 • Fanclub Social Media Platform
+<br>
+<small>Public project • Discontinued in September 2025</small>
+</div>
+
+<div class="box">
+2024 • Edunova Pro
+<br>
+<small>Public project • Discontinued in June 2026</small>
+</div>
+
+<div class="box">
+2024 • DEX OS Web Operating System
+<br>
+<small>Private experimental project</small>
+</div>
+
+<div class="box">
+2025 • Friendster Redevelopment
+<br>
+<small>Private project</small>
+</div>
+
+<div class="box">
+2026 • TPU Instruction Set Architecture
+<br>
+<small>Current research and development</small>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">
+Skills
+</h2>
+
+<div class="skills">
+
+<!--<div class="skill">C</div>
+
+<div class="skill">C++</div>
+-->
+<div class="skill">PHP</div>
+<!--
+<div class="skill">JavaScript</div>
+
+<div class="skill">Linux</div>
+-->
+<div class="skill">Computer Architecture</div>
+
+<div class="skill">Verilog</div>
+
+<div class="skill">RISC-V</div>
+
+<div class="skill">AI Hardware</div>
+
+</div>
+
+</section>
+<section id="donate">
+
+<h2 class="title">
+Support This Project
+</h2>
+
+<div class="card">
+
+<div class="donation-container">
+
+<div class="qr-section">
+
+<img src="tpu-upi.png" class="qr-code">
+
+</div>
+
+<div class="donation-content">
+
+<h3>
+Help Accelerate AI Hardware Innovation
+</h3>
+
+<p>
+
+Your support helps fund research and development related to AI acceleration, computer architecture, software tools, and future projects including the TPU Instruction Set Architecture.
+
+Contributions are voluntary and appreciated.
+
+</p>
+
+<br>
+<br>
+
+<a
+href="upi://pay?pa=8688127533@fam&am=10&cu=INR"
+class="btn">
+
+Donate via UPI
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">
+Contact
+</h2>
+
+<div class="card">
+
+<p>
+📧 priyamghosh2009@outlook.com
+</p>
+
+<br>
+
+<div class="buttons">
+
+<a href="mailto:priyamghosh2009@outlook.com"
+class="btn">
+Email
+</a>
+
+<a href="https://github.com/priyamghosh9"
+target="_blank"
+class="btn2">
+GitHub
+</a>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Priyam Ghosh. Built with HTML, CSS and JavaScript.
+
+</footer>
+
+</body>
+</html>
