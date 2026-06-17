@@ -203,8 +203,7 @@ After ISA completion, the research may extend into:
 **Priyam Ghosh**  
 Software Developer | AI Hardware Enthusiast | Independent Researcher  
 
-📧 Email: priyamghosh2009@outlook.com  
-💻 GitHub: https://github.com/priyamghosh9  
+💻 GitHub: https://github.com/priyamghosh2009  
 
 ---
 
