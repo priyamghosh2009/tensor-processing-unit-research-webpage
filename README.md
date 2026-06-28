@@ -1,4 +1,5 @@
-[![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/0.5281/zenodo.20990505)](https://doi.org/10.1007/978-3-319-76207-4_15)
+[![DOI](https://zenodo.org/badge/1262740415.svg)](https://doi.org/10.5281/zenodo.20990505)
+
 # 📘 TPU Instruction Set Architecture (ISA) Research  
 ### Towards Efficient, Scalable, and Accessible AI Acceleration Systems
 
