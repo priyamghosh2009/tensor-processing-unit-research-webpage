@@ -221,7 +221,7 @@ $\ T1 \leftarrow T1 + T2 \ $
 
 For element-wise addition:
 
-$\ \mathrm{shape}{shape}(T1)=\mathrm{shape}{shape}(T2) \ $
+$\ \mathrm{shape}(T1)=\mathrm{shape}(T2) \ $
 
 or the operands must satisfy the Tensor MAX broadcasting rules.
 
