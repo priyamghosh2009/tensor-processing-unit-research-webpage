@@ -41,11 +41,7 @@ The specification is experimental and may change as the architecture evolves.
 Tensor MAX treats tensors as first-class architectural objects.
 
 A tensor may be represented as:
-$$
-\[
-T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n}
-\]
-$$
+$\[T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n}\]$
 where:
 
 - \(T\) is a tensor
