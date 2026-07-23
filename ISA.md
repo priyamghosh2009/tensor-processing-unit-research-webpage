@@ -50,7 +50,7 @@ where:
 - T is a tensor
 - $\mathbb{D}$ is the tensor data type
 - ${d_i}$  represents the size of tensor dimension \(i\)
-- $\n\$ is the tensor rank
+- ${n}$ is the tensor rank
 
 Examples include:
 
@@ -192,13 +192,7 @@ TASSIGN T1,[[900,900],[200,300]]
 
 ### Conceptual Tensor
 
-\[
-T_1 =
-\begin{bmatrix}
-900 & 900\\
-200 & 300
-\end{bmatrix}
-\]
+$\[T1 =\begin{bmatrix}900 & 900\\200 & 300\end{bmatrix}\]$
 
 ### Operands
 
@@ -341,9 +335,7 @@ C=AB
 
 where:
 
-\[
-C\in\mathbb{D}^{m\times n}
-\]
+$\[C\in\mathbb{D}^{m\times n}\]$
 
 ### Example
 
@@ -382,9 +374,7 @@ Performs a tensor transpose operation.
 
 For a two-dimensional tensor:
 
-\[
-T' = T^\top
-\]
+$\[T' = T^\top\]$
 
 ### Example
 
@@ -409,12 +399,12 @@ T1 =
 
 ---
 
-## 6.9 `TBPG`
+## 6.9 `TBDC`
 
 ### Syntax
 
 ```text
-TBPG T1
+TBDC T1,[[9,9],[9,9]]
 ```
 
 ### Description
@@ -465,9 +455,7 @@ Conceptually, the operation combines a transpose transformation with an integrat
 
 A conceptual mathematical representation is:
 
-\[
-T' = \int T^\top\,dx
-\]
+$\[T' = \int T^\top\,dx\]$
 
 where `x` represents the transpose/integration parameter.
 
@@ -502,9 +490,7 @@ TSIN T1
 
 Computes the sine function over tensor data.
 
-\[
-T_1 \leftarrow \sin(T_1)
-\]
+$\[T1 \leftarrow \sin(T1)\]
 
 ---
 
@@ -516,9 +502,7 @@ TASIN T1
 
 Computes inverse sine.
 
-\[
-T_1 \leftarrow \arcsin(T_1)
-\]
+$\[T1 \leftarrow \arcsin(T1)\]$
 
 ---
 
@@ -530,9 +514,7 @@ TCOS T1
 
 Computes cosine.
 
-\[
-T_1 \leftarrow \cos(T_1)
-\]
+$\[T1 \leftarrow \cos(T1)\]$
 
 ---
 
@@ -544,9 +526,7 @@ TACOS T1
 
 Computes inverse cosine.
 
-\[
-T_1 \leftarrow \arccos(T_1)
-\]
+$\[T1 \leftarrow \arccos(T1)\]$
 
 ---
 
@@ -558,9 +538,7 @@ TTAN T1
 
 Computes tangent.
 
-\[
-T_1 \leftarrow \tan(T_1)
-\]
+$\[T1 \leftarrow \tan(T1)\]$
 
 ---
 
@@ -572,9 +550,7 @@ TATAN T1
 
 Computes inverse tangent.
 
-\[
-T_1 \leftarrow \arctan(T_1)
-\]
+$\[T1 \leftarrow \arctan(T1)\]$
 
 ---
 
@@ -586,9 +562,7 @@ TCOT T1
 
 Computes cotangent.
 
-\[
-T_1 \leftarrow \cot(T_1)
-\]
+$\[T1 \leftarrow \cot(T1)\]$
 
 ---
 
@@ -662,29 +636,21 @@ Tensor operations may require compatible shapes.
 
 For example:
 
-\[
-A+B
-\]
+$\[A+B\]$
 
 requires compatible dimensions under the Tensor MAX broadcasting rules.
 
 Matrix multiplication requires:
 
-\[
-A\in\mathbb{D}^{m\times k}
-\]
+$\[A\in\mathbb{D}^{m\times k}\]$
 
 and:
 
-\[
-B\in\mathbb{D}^{k\times n}
-\]
+$\[B\in\mathbb{D}^{k\times n}\]$
 
 producing:
 
-\[
-C\in\mathbb{D}^{m\times n}
-\]
+$\[C\in\mathbb{D}^{m\times n}\]$
 
 Shape checking may be performed by:
 
