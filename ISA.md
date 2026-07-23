@@ -47,9 +47,9 @@ $\ T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n} \$
 
 where:
 
-- $\ {T} \$ is a tensor
-- $\ \mathbb{D} \$ is the tensor data type
-- $\ d_i \$ represents the size of tensor dimension \(i\)
+- T is a tensor
+- $ \mathbb{D} $ is the tensor data type
+- $ d_i $  represents the size of tensor dimension \(i\)
 - $\ n \$ is the tensor rank
 
 Examples include:
