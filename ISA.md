@@ -270,7 +270,7 @@ The exact multiplication operator and shape rules are defined by the final Tenso
 ### Syntax
 
 ```text
-TDIV T1
+TDIV T1,T2
 ```
 
 ### Description
@@ -279,7 +279,7 @@ Performs the Tensor MAX tensor division operation.
 
 ### Conceptual Operation
 
-$\ T1 \leftarrow \operatorname{DIV}(T1)\ $
+$\ T1 \leftarrow (T1)/ (T2) \ $
 
 The exact operand and division semantics remain subject to final ISA definition.
 
