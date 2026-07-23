@@ -47,10 +47,10 @@ $\ T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n} \$
 
 where:
 
-- $\T\$ is a tensor
-- $\ \mathbb{D}\$ is the tensor data type
-- $\d_i\$ represents the size of tensor dimension \(i\)
-- $\ n\$ is the tensor rank
+- $\ T \$ is a tensor
+- $\ \mathbb{D} \$ is the tensor data type
+- $\ d_i \$ represents the size of tensor dimension \(i\)
+- $\ n \$ is the tensor rank
 
 Examples include:
 
@@ -64,15 +64,11 @@ $\ T \in \mathbb{D}^{n} \$
 
 ### Matrix
 
-\[
-T \in \mathbb{D}^{m \times n}
-\]
+$\ T \in \mathbb{D}^{m \times n} \$
 
 ### Higher-dimensional tensor
 
-\[
-T \in \mathbb{D}^{d_1 \times d_2 \times d_3}
-\]
+$\ T \in \mathbb{D}^{d_1 \times d_2 \times d_3} \$
 
 ---
 
@@ -131,9 +127,9 @@ Tensor MAX instructions are grouped into:
 | Tensor Management | `TCREATE`, `TASSIGN` |
 | Arithmetic | `TADD`, `TSUB`, `TMULX`, `TDIV` |
 | Matrix | `TMMUL` |
-| Transformation | `TTSP`, `TBPG` |
+| Transformation | `TTSP`, `TBDC` |
 | Tensor Processing | `TFWD`, `TINT` |
-| Mathematics | `TSIN`, `TASIN`, `TCOS`, `TACOS`, `TTAN`, `TATAN`, `TCOT` |
+| Mathematics | `TSIN`, `TASIN`, `TCOS`, `TACOS`, `TTAN`, `TATAN`, `TCOT`, `TACOT`, `TSEC`, `TASEC`, `TCOSEC`,`TACOSEC`  |
 | Data Types | `TDTYPE` |
 | Timing | `TCLOCK` |
 
@@ -157,6 +153,7 @@ Creates or initializes a tensor register.
 
 ```text
 TCREATE T1
+TCRAETE T2
 ```
 
 ### Operands
