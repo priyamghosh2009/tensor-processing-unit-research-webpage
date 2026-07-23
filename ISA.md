@@ -43,7 +43,7 @@ Tensor MAX treats tensors as first-class architectural objects.
 A tensor may be represented as:
 
 
-$\ T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n} \$
+$\ T \in \mathbb{D}^{d_1 \times d_2 \times \dots \times d_n} \ $
 
 where:
 
@@ -56,19 +56,19 @@ Examples include:
 
 ### Scalar
 
-$\ T \in \mathbb{D}\$
+$\ T \in \mathbb{D} \ $
 
 ### Vector
 
-$\ T \in \mathbb{D}^{n} \$
+$\ T \in \mathbb{D}^{n} \ $
 
 ### Matrix
 
-$\ T \in \mathbb{D}^{m \times n} \$
+$\ T \in \mathbb{D}^{m \times n} \ $
 
 ### Higher-dimensional tensor
 
-$\ T \in \mathbb{D}^{d_1 \times d_2 \times d_3} \$
+$\ T \in \mathbb{D}^{d_1 \times d_2 \times d_3} \ $
 
 ---
 
@@ -164,9 +164,7 @@ TCRAETE T2
 
 ### Conceptual Operation
 
-\[
-T_n \leftarrow \varnothing
-\]
+$\ T_n \leftarrow \varnothing \ $
 
 The exact initialization state is implementation-defined.
 
@@ -192,7 +190,7 @@ TASSIGN T1,[[900,900],[200,300]]
 
 ### Conceptual Tensor
 
-$\[T1 =\begin{bmatrix}900 & 900\\200 & 300\end{bmatrix}\]$
+$\ T1 =\begin{bmatrix}900 & 900\\200 & 300\end{bmatrix} \ $
 
 ### Operands
 
@@ -217,17 +215,13 @@ Adds two compatible tensors.
 
 ### Conceptual Operation
 
-\[
-T_1 \leftarrow T_1 + T_2
-\]
+$\ T1 \leftarrow T1 + T2 \ $
 
 ### Shape Requirement
 
 For element-wise addition:
 
-\[
-\operatorname{shape}(T_1)=\operatorname{shape}(T_2)
-\]
+$\ \operatorname{shape}(T1)=\operatorname{shape}(T2) \ $
 
 or the operands must satisfy the Tensor MAX broadcasting rules.
 
@@ -247,9 +241,7 @@ Subtracts `T2` from `T1`.
 
 ### Conceptual Operation
 
-\[
-T_1 \leftarrow T_1 - T_2
-\]
+$\ T1 \leftarrow T1 - T2 \ $
 
 ---
 
@@ -267,9 +259,7 @@ Performs the Tensor MAX tensor multiplication operation.
 
 ### Conceptual Operation
 
-\[
-T_1 \leftarrow T_1 \otimes T_2
-\]
+$\ T1 \leftarrow T1 \otimes T2 \ $
 
 The exact multiplication operator and shape rules are defined by the final Tensor MAX tensor execution model.
 
@@ -289,9 +279,7 @@ Performs the Tensor MAX tensor division operation.
 
 ### Conceptual Operation
 
-\[
-T_1 \leftarrow \operatorname{DIV}(T_1)
-\]
+$\ T1 \leftarrow \operatorname{DIV}(T1)\ $
 
 The exact operand and division semantics remain subject to final ISA definition.
 
@@ -311,31 +299,23 @@ Performs matrix multiplication.
 
 ### Conceptual Operation
 
-\[
-T_1 \leftarrow T_1T_2
-\]
+$\ T1 \leftarrow T1T2\ $
 
 For matrices:
 
-\[
-A \in \mathbb{D}^{m\times k}
-\]
+$\ A \in \mathbb{D}^{m\times k}\ $
 
 and:
 
-\[
-B \in \mathbb{D}^{k\times n}
-\]
+$\ B \in \mathbb{D}^{k\times n}\ $
 
 the result is:
 
-\[
-C=AB
-\]
+$\ C=AB \ $
 
 where:
 
-$\[C\in\mathbb{D}^{m\times n}\]$
+$\ C\in\mathbb{D}^{m\times n}\ $
 
 ### Example
 
@@ -374,7 +354,7 @@ Performs a tensor transpose operation.
 
 For a two-dimensional tensor:
 
-$\[T' = T^\top\]$
+$\ T' = T^\top\ $
 
 ### Example
 
@@ -455,7 +435,7 @@ Conceptually, the operation combines a transpose transformation with an integrat
 
 A conceptual mathematical representation is:
 
-$\[T' = \int T^\top\,dx\]$
+$\ T' = \int T^\top\,dx\ $
 
 where `x` represents the transpose/integration parameter.
 
@@ -490,7 +470,7 @@ TSIN T1
 
 Computes the sine function over tensor data.
 
-$\[T1 \leftarrow \sin(T1)\]
+$\ T1 \leftarrow \sin(T1)\ $
 
 ---
 
@@ -502,7 +482,7 @@ TASIN T1
 
 Computes inverse sine.
 
-$\[T1 \leftarrow \arcsin(T1)\]$
+$\ T1 \leftarrow \arcsin(T1)\ $
 
 ---
 
@@ -514,7 +494,7 @@ TCOS T1
 
 Computes cosine.
 
-$\[T1 \leftarrow \cos(T1)\]$
+$\ T1 \leftarrow \cos(T1)\ $
 
 ---
 
@@ -526,7 +506,7 @@ TACOS T1
 
 Computes inverse cosine.
 
-$\[T1 \leftarrow \arccos(T1)\]$
+$\ T1 \leftarrow \arccos(T1)\ $
 
 ---
 
@@ -538,7 +518,7 @@ TTAN T1
 
 Computes tangent.
 
-$\[T1 \leftarrow \tan(T1)\]$
+$\ T1 \leftarrow \tan(T1)\ $
 
 ---
 
@@ -550,7 +530,7 @@ TATAN T1
 
 Computes inverse tangent.
 
-$\[T1 \leftarrow \arctan(T1)\]$
+$\ T1 \leftarrow \arctan(T1)\ $
 
 ---
 
@@ -562,7 +542,7 @@ TCOT T1
 
 Computes cotangent.
 
-$\[T1 \leftarrow \cot(T1)\]$
+$\ T1 \leftarrow \cot(T1)\ $
 
 ---
 
@@ -636,21 +616,21 @@ Tensor operations may require compatible shapes.
 
 For example:
 
-$\[A+B\]$
+$\ A+B\ $
 
 requires compatible dimensions under the Tensor MAX broadcasting rules.
 
 Matrix multiplication requires:
 
-$\[A\in\mathbb{D}^{m\times k}\]$
+$\ A\in\mathbb{D}^{m\times k} \ $
 
 and:
 
-$\[B\in\mathbb{D}^{k\times n}\]$
+$\ B\in\mathbb{D}^{k\times n} \ $
 
 producing:
 
-$\[C\in\mathbb{D}^{m\times n}\]$
+$\ C\in\mathbb{D}^{m\times n}\ $
 
 Shape checking may be performed by:
 
@@ -773,7 +753,7 @@ The following areas remain under development:
 - Broadcasting semantics
 - `TINT` formal semantics
 - `TFWD` formal semantics
-- `TBPG` formal semantics
+- `TBDC` formal semantics
 - `TCLOCK` formal semantics
 - Exception handling
 - Hardware execution model
