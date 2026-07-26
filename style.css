@@ -146,22 +146,21 @@ border-left:5px solid #38bdf8;
 margin-bottom:15px;
 color:white;
 transition: 5s;
-text-size:18px;
 text-decoration: none;
 }
 .box:hover{
   background:rgba(255,255,255,.05);
 padding:25px;
-text-size:20px;
 transition: 5s;
 border-radius:18px;
 border-left:5px solid #38bdf8;
 margin-bottom:15px;
 color:white;
 text-decoration: none;
-
 }
-
+a.box{
+    text-decoration: none;
+}
 .tag{
 display:inline-block;
 margin-top:8px;
